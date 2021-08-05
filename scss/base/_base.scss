@@ -1,0 +1,85 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $primaryFont;
+background-color: $Font-snow;
+}
+
+button {
+  padding: 0;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.primary-font-size{
+  @include font(22px, 22px, 200);
+  color: $Font-dark;
+}
+
+
+.section-title{
+@include font(80px, 90px, 400);
+letter-spacing: 5px;
+text-transform: uppercase;
+color: $Font-snow;
+}
+
+.main-title{
+position: absolute;
+visibility: hidden;
+top: 0;
+left: 0;
+width: 0;
+height: 0;
+}

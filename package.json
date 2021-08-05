@@ -1,0 +1,30 @@
+{
+  "name": "kolosok",
+  "version": "1.0.0",
+  "description": "web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergJess/Kolosok.git"
+  },
+  "author": "SergJess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergJess/Kolosok/issues"
+  },
+  "homepage": "https://github.com/sergJess/Kolosok#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}
