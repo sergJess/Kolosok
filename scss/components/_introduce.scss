@@ -38,3 +38,8 @@
 .introduce-content_second{
   @extend %relative;
 }
+.introduce__button{
+  position: absolute;
+  bottom: 7%;
+  right: -10%;
+}
