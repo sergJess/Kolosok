@@ -62,6 +62,10 @@ li {
     margin: 0 auto;
     padding: 0 1rem;
 }
+.section-title{
+    @include font(3.6rem, 4rem,600);
+    color: $Font-dark;
+}
 .primary-font-size{
   @include font(1.8rem, 2.5rem, 400);
   color: $Font-dark;

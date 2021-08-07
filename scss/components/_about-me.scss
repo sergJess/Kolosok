@@ -1,0 +1,23 @@
+.about-me{
+  padding:  15rem 0 12rem 0;
+}
+.about-me__inner{
+  @extend %flex;
+  column-gap: 4.2rem;
+  padding: 0 35rem 0 24rem;
+}
+.about-me-item__info{
+  flex-basis: 69%;
+}
+.about-me__text{
+  padding: 3.1rem 0 17rem 0;
+}
+.about-me-item__images{
+  @extend %relative;
+
+}
+.about-me__image{
+  position: absolute;
+  right: -242px;
+  bottom: -40%;
+}

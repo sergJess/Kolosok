@@ -5,13 +5,16 @@
   @extend %relative;
   padding: 0  58rem 0 0;
 }
-// .header__nav::before{
-//   content: '';
-//   position: absolute;
-//   width: 27px;
-//   height: 27px;
-//   background-color: $Background-dark;
-// }
+.header__nav::before{
+  content: '';
+  position: absolute;
+  right: 12%;
+  top:30%;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: $Background-dark;
+}
 .header__line{
   margin: 1rem 0 0 0;
   width: 100%;
