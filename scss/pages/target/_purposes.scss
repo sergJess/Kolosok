@@ -1,0 +1,9 @@
+.purposes__inner{
+  @extend %flex;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+.purposes-item__text{
+  padding: 6.1rem 10rem 0 0;
+max-width: 1000px;
+}

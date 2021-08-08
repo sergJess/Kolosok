@@ -92,6 +92,21 @@ height: 0;
     display: inline-block;
     width: 70px;
     height: 4px;
-    background-color: $Active-color;
-    vertical-align: middle;
+   background-color: $Active-color;
+   vertical-align: middle;
+   
+}
+.circle{
+   @extend %relative;
+   padding: 0 0 0 20px; 
+   margin: 1.2rem 0;
+}
+.circle::before{
+@extend %pseudo-elem;
+width: 6px;
+height: 6px;
+left: 4px;
+top: 10px;
+border-radius: 50%;
+background-color: $Active-color;
 }
