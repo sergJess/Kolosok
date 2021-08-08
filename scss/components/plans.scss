@@ -1,0 +1,56 @@
+.plans{
+  background-color: $Background-cream;
+}
+.plans__inner{
+  @extend %relative;
+  @extend %flex;
+  column-gap: 5rem;
+  flex-wrap: nowrap;
+  padding: 0 25rem 0 0;
+}
+.plans__inner::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 110px;
+  height: 220px;
+  background-image: url(../assets/images/svg/semiMoon.svg);
+}
+.plans__title{
+  margin: 6rem 0 0 0;
+}
+.plans-text{
+  padding: 0 0 0 8rem;
+}
+.plans__text_space{
+  margin: 2.4rem 0;
+}
+.quotes__text-left{
+@extend %relative;
+}
+.quotes__text-left::before{
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 53px;
+  top:6px;
+  left: -65px;
+  background-image: url(../assets/images/svg/Quotes-left.svg);
+  background-repeat: no-repeat;
+}
+.plans__text-end{
+  @extend %relative;
+  @include font(2.1rem, 2.3rem, 600);
+  color: $Background-dark;
+}
+.plans__text-end::before{
+  content: '';
+  position: absolute;
+  width: 65px;
+  height: 53px;
+  top:6px;
+  right: 5px;
+  background-image: url(../assets/images/svg/Quotes-right.svg);
+  background-repeat: no-repeat;
+}
