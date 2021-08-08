@@ -1,6 +1,4 @@
-.plans{
-  background-color: $Background-cream;
-}
+
 .plans__inner{
   @extend %relative;
   @extend %flex;
@@ -11,7 +9,7 @@
 .plans__inner::after{
   content: '';
   position: absolute;
-  top: 30px;
+  top: 70px;
   right: 0;
   width: 110px;
   height: 220px;
@@ -48,9 +46,9 @@
   content: '';
   position: absolute;
   width: 65px;
-  height: 53px;
-  top:6px;
-  right: 5px;
+  height: 70px;
+  top: 15px;
+  right: -74px;
   background-image: url(../assets/images/svg/Quotes-right.svg);
   background-repeat: no-repeat;
 }
