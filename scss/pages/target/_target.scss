@@ -1,0 +1,25 @@
+
+.target__inner{
+  @extend %flex;
+  column-gap: 10px;
+  justify-content: space-around;
+  padding: 7.7rem 7rem 0 7rem;
+}
+.target-item__text{
+  padding: 11rem 0 0 0;
+}
+.target__text{
+  @include font(4.3rem, 5.2rem, 400);
+}
+.target__line{
+  @extend %relative;
+}
+.target__line::before{
+  content: '';
+  position: absolute;
+  top: 125px;
+  left: 0;
+  width: 2px;
+  height: 182px;
+  background-color: $Active-color;
+}

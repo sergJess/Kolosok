@@ -1,0 +1,11 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+// base
+@import 'base/fonts';
+@import 'base/base';
+// components
+@import 'components/header';
+@import 'components/nav';
+@import 'pages/target/target';
+@import 'components/footer';

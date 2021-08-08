@@ -13,6 +13,18 @@ gulp.task('scss', function() {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('scss-2', function() {
+    return gulp.src('scss/style-page-target.scss')
+        .pipe(sass({ outputStyle: "compressed" }))
+        .pipe(autoprefixer({
+                overrideBrowserslist: ['last 10 versions'],
+                cascade: false
+            }
+
+        ))
+        .pipe(gulp.dest('css'));
+});
+
 gulp.task('watch', function() {
-    gulp.watch('scss/**/*.scss', gulp.parallel('scss'))
+    gulp.watch('scss/**/*.scss', gulp.parallel('scss','scss-2'))
 })

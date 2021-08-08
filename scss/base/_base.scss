@@ -79,9 +79,19 @@ left: 0;
 width: 0;
 height: 0;
 }
+.main-section-title{
+    @include font(6.8rem, 7.5rem, 500);
+}
 .light-background{
     background-color: $Font-snow;
 }
 .cream-background{
     background-color: $Background-cream;
+}
+.line{
+    display: inline-block;
+    width: 70px;
+    height: 4px;
+    background-color: $Active-color;
+    vertical-align: middle;
 }
