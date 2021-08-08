@@ -1,0 +1,22 @@
+.work__inner{
+  @extend %relative;
+  @extend %flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  padding: 14rem 24rem 13rem 24rem;
+}
+.work__inner::after{
+  @extend %pseudo-elem;
+  width: 110px;
+  height: 220px;
+  right: 0;
+  bottom: 70px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/svg/semiMoon.svg);
+}
+.work-item__text{
+  flex-basis: 60%;
+}
+.work__text-space{
+  margin: 2rem 0;
+}
