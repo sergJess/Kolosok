@@ -2,9 +2,19 @@
   padding:  15rem 0 12rem 0;
 }
 .about-me__inner{
+  @extend %relative;
   @extend %flex;
   column-gap: 4.2rem;
   padding: 0 35rem 0 24rem;
+}
+.about-me__inner::after{
+  content: 'О себе';
+  position: absolute;
+  right: 20%;
+  top: 20%;
+ @include font(18.5rem, 20rem, 600);
+  color: $Background-cream2;
+  z-index: -1;
 }
 .about-me-item__info{
   flex-basis: 69%;
@@ -14,10 +24,50 @@
 }
 .about-me-item__images{
   @extend %relative;
-
+  margin: 0 0 30rem 0;
+}
+.about-me-item__images::after{
+  content: '';
+  position: absolute;
+  top: 310px;
+  left: -270px;
+  width: 755px;
+  height: 375px;
+  background-color: $Background-cream2;
+  z-index: -2;
+}
+.about-me-item__images::before{
+  content: '';
+  position: absolute;
+  top: 670px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $Active-color;
+  z-index: -1;
 }
 .about-me__image{
   position: absolute;
   right: -242px;
-  bottom: -40%;
+  top: 362px;
+}
+.about-me-item__info{
+  @extend %flex;
+  flex-direction: column;
+}
+.about-me__family{
+  max-width: 490px;
+  overflow: hidden;
+  align-self: flex-end;
+  margin: 0 0 0 30rem;
+}
+.friends-about{
+  position: absolute;
+  bottom: -36px;
+  left: 240px;
+  max-width: 766px;
+}
+.friends__list{
+  margin: 3.1rem 0;
 }

@@ -21,10 +21,11 @@
 .introduce-content_first::after{
   @extend %pseudo-elem;
   width: 2px;
-  height: 483px;
+  height: 410px;
   top: 120%;
   left: 4px;
   background-color: $Active-color;
+  z-index: 100;
 }
 .introduce-title{
   max-width: 580px;
