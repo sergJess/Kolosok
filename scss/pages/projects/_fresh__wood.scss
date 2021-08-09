@@ -1,0 +1,17 @@
+.fresh-wood__inner{
+  @extend %flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  padding: 14rem 24rem 4rem 24rem;
+}
+.fresh-wood-item__second{
+  flex-basis: 54%;
+}
+.fresh-wood__images{
+  @extend %flex;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+.fresh-wood__text{
+  margin: 3rem 0 1.7rem 0;
+}
