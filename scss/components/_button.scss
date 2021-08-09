@@ -13,13 +13,21 @@
   font-family: $primaryFont;
   text-transform: uppercase;
   @include font(1.6rem, 2.3rem, 400);
+  color: $Background-dark;
+}
+.button__text_light{
+  color: $Font-snow;
 }
 .button_light{
   background-image: url(../assets/images/svg/button-bg-light.svg);
 }
-.button__text_colored-light{
+.button_aqua{
+  background-image: url(../assets/images/svg/button-aqva-bg.svg);
+}
+.button__post-text{
   font-size: 2em;
   vertical-align: middle;
+}
+.button__text_colored-light{
   color: $Active-color;
-
 }
