@@ -117,7 +117,16 @@ height: 0;
 width: 6px;
 height: 6px;
 left: 4px;
-top: 10px;
+top: 8px;
 border-radius: 50%;
 background-color: $Active-color;
 }
+
+.gradient-line{
+position: absolute;
+width: 220px;
+top: 0;
+right: 260px;
+background: linear-gradient(180deg, #26D5CE 0%, #C0FCF9 100%);
+}
+
