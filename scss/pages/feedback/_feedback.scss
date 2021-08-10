@@ -1,3 +1,17 @@
 .feedback__inner{
-  padding: 11.4rem 24rem 14rem 24rem;
+  @extend %relative;
+  padding: 14.4rem 24rem 14rem 24rem;
+}
+
+.feedback__title{
+  @extend %relative;
+  padding: 0 50rem 0 0;
+  max-width: 90%;
+}
+.feedback__circle{
+  bottom: 45px;
+right: -50px;
+}
+.feedback__semi-moon-up{
+right: 220px;
 }
