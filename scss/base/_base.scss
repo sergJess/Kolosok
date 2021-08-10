@@ -121,12 +121,25 @@ top: 8px;
 border-radius: 50%;
 background-color: $Active-color;
 }
-
+.gradient{
+ position: absolute;
+ top: 0;
+ background: linear-gradient(180deg, #26D5CE 0%, #C0FCF9 100%);
+}
 .gradient-line{
-position: absolute;
 width: 220px;
-top: 0;
 right: 260px;
-background: linear-gradient(180deg, #26D5CE 0%, #C0FCF9 100%);
 }
 
+.gradient-line_small{
+width: 25px;
+right: 270px;
+}
+.gradient-line_middle{
+width: 170px;
+right: 190px;
+}
+.gradient-line_semi-middle{
+ width: 100px;
+ right: 190px;
+    }

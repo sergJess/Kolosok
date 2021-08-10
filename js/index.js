@@ -13,14 +13,10 @@ navigation.addEventListener('mouseover',(e)=>{
 });
 
 //gradient
-
 const header = document.querySelector('.header');
-const introduce = document.querySelector('.introduce');
-const gradientLine = document.querySelector('.gradient-line');
-const gradientHeight = getSumOfHeights(header, introduce);
-gradientLine.style.height = `${getSumOfHeights(header, introduce)}px`;
-function getSumOfHeights(element1, element2){
-  return element1.clientHeight + element2.clientHeight;
+const gradientLine = document.querySelector('.gradient');
+const gradientHeight = getSumOfHeights(header);
+gradientLine.style.height = `${getSumOfHeights(header)}px`;
+function getSumOfHeights(element){
+  return element.clientHeight + element.nextSibling.nextSibling.clientHeight;
 }
-
-console.log(gradientHeight);

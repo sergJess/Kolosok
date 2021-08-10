@@ -1,11 +1,33 @@
+
 .fresh-wood__inner{
+  @extend %relative;
   @extend %flex;
   column-gap: 10px;
   justify-content: space-between;
   padding: 14rem 24rem 4rem 24rem;
+  z-index: 100;
+}
+.fresh-wood__inner::before{
+  @extend %pseudo-elem;
+  width: 1037px;
+  height: 355px;
+  bottom: 0;
+  left: 0;
+  background-color: $Background-cream;
+}
+.fresh-wood__inner::after{
+  @extend %pseudo-elem;
+  width: 30px;
+  height: 30px;
+  bottom: -15px;
+  left: 25rem;
+  border-radius: 50%;
+  background-color: $Active-color;
 }
 .fresh-wood-item__second{
+  @extend %relative;
   flex-basis: 54%;
+z-index: 100; 
 }
 .fresh-wood__images{
   @extend %flex;
@@ -14,4 +36,8 @@
 }
 .fresh-wood__text{
   margin: 3rem 0 1.7rem 0;
+}
+.fresh-wood-item__first{
+  @extend %relative;
+
 }
