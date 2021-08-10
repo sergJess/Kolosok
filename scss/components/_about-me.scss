@@ -16,6 +16,14 @@
   color: $Background-cream2;
   z-index: -1;
 }
+.about-me__inner::before{
+  @extend %pseudo-elem;
+  height: 1px;
+  width: 420px;
+  bottom: 10%;
+  right: 0;
+  background-color: $Active-color;
+}
 .about-me-item__info{
   flex-basis: 69%;
 }
@@ -62,6 +70,7 @@
   align-self: flex-end;
   margin: 0 0 0 30rem;
 }
+
 .friends-about{
   position: absolute;
   bottom: -36px;
