@@ -40,3 +40,8 @@
     height: 0;
   }
 }
+@media(max-width:620px){
+  .header__inner{
+    padding: 6rem 0 2rem 0;
+  }
+}

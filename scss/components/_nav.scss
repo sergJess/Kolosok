@@ -72,12 +72,15 @@
 }
 @media(max-width:620px){
   .nav{
+    display: none;
     position: absolute;
     right: -100vw;
     max-width: 300px;
     min-height: 70vh;
     padding: 5rem 7rem 4rem 1rem;
+    border-radius: 5px;
 background-color: $Font-dark;
+opacity: .7;
 z-index: 2000;
   }
   .nav__mobile-cross{

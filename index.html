@@ -38,7 +38,7 @@
    <div class="introduce-content introduce-content_second">
     <picture>
       <source srcset="assets/images/mobile/home-page/person-1.png" media="(max-width: 1000px)">
-      <img src="assets/images/Person/Pavel_Kolosok.png" alt="Pavel Kolosok">
+      <img class="adaptive-image" src="assets/images/Person/Pavel_Kolosok.png" alt="Pavel Kolosok">
   </picture>
      <button class="button button_light introduce__button">
        <a href="#">
@@ -53,13 +53,13 @@
     <div class="about-me-item about-me-item__images">
       <picture>
         <source srcset="assets/images/mobile/home-page/person-2.jpg" media="(max-width: 1000px)">
-        <img src="assets/images/about-me/Kolosok-1.jpg" alt="Pavel Pavel_Kolosok">
+        <img class="adaptive-image" src="assets/images/about-me/Kolosok-1.jpg" alt="Pavel Pavel_Kolosok">
     </picture>
      
     <div class="about-me__image">
       <picture>
         <source srcset="assets/images/mobile/home-page/person-3.jpg" media="(max-width: 1000px)">
-        <img src="assets/images/about-me/Kolosok-2.jpg" alt="Pavel Kolosok">
+        <img class="adaptive-image" src="assets/images/about-me/Kolosok-2.jpg" alt="Pavel Kolosok">
     </picture>
       
     </div>
@@ -70,7 +70,7 @@
       <div class="about-me__family">
         <picture>
           <source srcset="assets/images/mobile/home-page/person-4.jpg" media="(max-width: 1000px)">
-          <img src="assets/images/about-me/Kolosok-3.jpg" alt="Pavel Kolosok">
+          <img class="adaptive-image" src="assets/images/about-me/Kolosok-3.jpg" alt="Pavel Kolosok">
       </picture>
         
       </div>
@@ -89,9 +89,9 @@
 <section class="plans cream-background">
   <div class="container plans__inner">
 <div class="plans-item">
-  <picture>
+  <picture >
     <source srcset="assets/images/mobile/home-page/person-5.jpg" media="(max-width: 1000px)">
-    <img src="assets/images/Plans/thinking-Kolosok.jpg" alt="Pavel Kolosok in Dmitrov">
+    <img class="adaptive-image" src="assets/images/Plans/thinking-Kolosok.jpg" alt="Pavel Kolosok in Dmitrov">
 </picture>
 </div>
 <div class="plans-item"><h2 class="section-title plans__title">Личные планы на перспективу:</h2>
@@ -109,14 +109,15 @@
 <footer class="footer light-background">
   <div class="container footer__inner">
 <div class="footer-item footer-icon">
-  <a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a>
+  <div class="footer-link"><a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a></div>
+  <div class="footer-item footer-text">
+    <p class="primary-font-size">
+      2020 – 2021 &#169;
+      Все права защищены 
+    </p>
+  </div>
 </div>
-<div class="footer-item footer-text">
-  <p class="primary-font-size">
-    2020 – 2021 &#169;
-    Все права защищены 
-  </p>
-</div>
+
   </div>
 </footer>
 <body>
