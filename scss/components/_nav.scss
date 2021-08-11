@@ -29,3 +29,88 @@
   @include font(1.6rem, 1.9rem, 600);
   color: $Active-color;
 }
+
+// mobile
+.cross__line {
+  width: 25px;
+  height: 2px;
+  background-color: $Font-snow;
+}
+
+.cross__line-left {
+  transform: rotate(-45deg);
+  position: relative;
+  left: -1px;
+  top: 2px;
+}
+
+.cross__line-right {
+  transform: rotate(45deg);
+}
+
+
+.mobile-menu-animation {
+  animation-name: mobile-menu-move;
+  animation-duration: 0.5s;
+}
+
+@keyframes mobile-menu-move {
+  100% {
+      right: 0;
+  }
+}
+
+.mobile-menu-animation-back {
+  animation-name: mobile-menu-move-back;
+  animation-duration: 0.5s;
+}
+
+@keyframes mobile-menu-move-back {
+  100% {
+      right: -100vw;
+  }
+}
+@media(max-width:620px){
+  .nav{
+    position: absolute;
+    right: -100vw;
+    max-width: 300px;
+    min-height: 70vh;
+    padding: 5rem 7rem 4rem 1rem;
+background-color: $Font-dark;
+z-index: 2000;
+  }
+  .nav__mobile-cross{
+    position: absolute;
+    right: 10px;
+    top:40px;
+  }
+  .nav-list{
+    @extend %flex;
+    justify-content: center;
+    column-gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav__list_active::after{
+    height: 0;
+  }
+  .nav__list {
+    padding: 1rem 0 1rem 0;
+}
+.nav__link_active{
+  @include font(1.6rem, 1.9rem, 400);
+  color: $Font-snow;
+}
+.nav__link{
+  color: $Font-snow;
+}
+}
+
+.mobile-menu-visible {
+  right: 0px;
+}
+
+.mobile-menu-invisible {
+  right: -100vw;
+}

@@ -80,3 +80,110 @@
 .friends__list{
   margin: 3.1rem 0;
 }
+@media (max-width: 1680px){
+  .about-me-item__images::after {
+    left: -372px;}
+    .about-me__inner::after {
+      right: 35px;
+    }
+}
+@media (max-width: 1480px){
+  .about-me{
+    padding:  10rem 0 8rem 0;
+  }
+  .about-me__inner{
+    padding: 0px 2rem 0 6rem;
+  }
+  .friends-about {
+    left: 26px;
+  }
+  .about-me__inner::before { 
+width: 0;
+height: 0;
+  }
+}
+@media (max-width: 1280px){
+.friends-about{
+  padding: 2rem 0 2rem 0;
+  position: static;
+}
+.about-me__image{
+  position: static;
+}
+.about-me__inner {
+  flex-direction: column;
+}
+.about-me-item__images{
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  margin: 0 0 10rem 0;
+}
+.about-me-item__images::before {
+  top: 560px;
+}
+.about-me-item__images::after{
+  height: 268px;
+  left: -360px;
+}
+.about-me__inner::after{
+  @include font(10rem, 10rem, 600);
+}
+.about-me__text{
+  padding: 3rem 0;
+}
+.about-me__family{
+  align-self: flex-start;
+}
+.about-me{
+  padding:  4rem 0 1rem 0;
+}
+}
+
+@media(max-width: 1000px){
+  .about-me-item__images::after {
+    top:10px
+  }
+  .about-me-item__images::before {
+    top: 262px;
+}
+.about-me__inner::after {
+  top: 0;
+}
+.about-me__image{
+  align-self: flex-end;
+}
+.about-me-item__images{
+justify-content: flex-start;
+}
+.about-me__inner::after{
+  @include font(5rem, 5rem, 600);
+}
+.about-me__family{
+  margin: 0;
+}
+}
+
+@media(max-width: 680px){
+  .about-me__inner {
+    padding: 0 1rem;
+  }
+  .about-me-item__images::after {
+    height: 200px;
+    width: 350px;
+    left: -60px;
+    top: 65px;
+}
+.about-me__image{
+  position: relative;
+  top: 55px;
+  left: 0;
+}
+.about-me-item__images::before {
+  top: 255px;
+  width: 20px;
+  height: 20px;
+  left: 0
+  ;
+}
+}

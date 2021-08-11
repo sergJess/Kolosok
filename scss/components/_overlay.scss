@@ -1,0 +1,42 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 0;
+    background-color: $Font-dark;
+    opacity: 0;
+    z-index: 5000;
+}
+
+.overlay-visible {
+    height: 100vh;
+    opacity: 0.6;
+}
+
+.overlay-animation {
+    animation-name: opacity;
+    animation-duration: 0.6s;
+}
+
+.overlay-animation-back {
+    animation-name: opacity-fade;
+    animation-duration: 0.3s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes opacity-fade {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+    }
+}

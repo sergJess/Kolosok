@@ -12,14 +12,15 @@
   top: 70px;
   right: 0;
   width: 110px;
-  height: 220px;
+  height: 230px;
+  background-repeat: no-repeat;
   background-image: url(../assets/images/svg/semiMoon.svg);
 }
 .plans__title{
   margin: 6rem 0 0 0;
 }
 .plans-text{
-  padding: 0 0 0 8rem;
+  padding: 0 0 0.5rem 8rem;
 }
 .plans__text_space{
   margin: 2.4rem 0;
@@ -51,4 +52,33 @@
   right: -74px;
   background-image: url(../assets/images/svg/Quotes-right.svg);
   background-repeat: no-repeat;
+}
+@media(max-width:1480px){
+  .plans__inner{
+    padding: 0 1rem 0 0;
+  }
+  .plans__inner::after{
+    height: 0;
+  }
+  .plans__text-end::before {
+    top: 25px;
+    right: 0;
+  }
+}
+@media (max-width: 1280px){
+  .plans__inner{
+    flex-direction: column;
+  }
+
+  .quotes__text-left::before {
+    background-image: url(../assets/images/mobile/svg/quote-up.svg);
+  }
+  .plans__text-end::before{
+    background-image: url(../assets/images/mobile/svg/qoute-down.svg);
+  }
+}
+@media (max-width: 1000px){
+  .plans__text-end{
+    @include font(1.8rem, 2rem, 600);
+  }
 }

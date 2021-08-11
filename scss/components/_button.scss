@@ -31,3 +31,20 @@
 .button__text_colored-light{
   color: $Active-color;
 }
+
+@media (max-width: 1000px){
+  .button{
+    width: 125px;
+    height: 125px;
+  }
+  .button__text{
+    padding: 0 4px 0 10px;
+    @include font(1.2rem, 1.7rem, 400);
+  }
+  .button_light{
+    background-image: url(../assets/images/mobile/svg/button-light.svg);
+  }
+  .button_aqua{
+    background-image: url(../assets/images/mobile/svg/button-aqua.svg);
+  }
+}
