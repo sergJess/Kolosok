@@ -20,3 +20,26 @@
 .work__text-space{
   margin: 2rem 0;
 }
+@media (max-width: 1480px){
+  .work__inner{
+    column-gap: 50px;
+    padding: 5rem 3rem 2rem 3rem;
+  }
+  .work__inner::after{
+    height: 0;
+  }
+}
+
+@media (max-width: 800px){
+  .work__inner{
+    flex-direction: column;
+  }
+  .work-item__text {
+    padding: 1rem 0;
+  }
+}
+@media(max-width: 680px){
+  .work__inner{
+    padding: 5rem 1rem 2rem 1rem;
+  }
+}

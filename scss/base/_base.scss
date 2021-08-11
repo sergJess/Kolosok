@@ -155,6 +155,10 @@ right: 190px;
     width: 150px;
     right: 50px;
 }
+.gradient-line_small{
+    width: 25px;
+    right: 145px;
+    }
 }
 @media (max-width: 1000px){
     .section-title{
@@ -173,6 +177,10 @@ right: 190px;
     .gradient-line{
         width: 35px;
         }
+     .gradient-line_small{
+         width: 25px;
+         right: 8%;
+            }
         
 }
 @media(max-width:620px){

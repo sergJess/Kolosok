@@ -29,3 +29,46 @@
 .target__text-info{
   padding: 5.5rem 0 3rem 0;
 }
+
+@media (max-width: 1480px){
+  .target__inner{
+    justify-content: space-between;
+    padding: 7.7rem 3rem 0 3rem;
+  }
+  .target-text-info{
+    padding: 0 3rem 5rem 3rem;
+  }
+  .target__text{
+    @include font(2.5rem, 2.8rem, 400);
+  }
+  .target__line::before{
+    top: 60px;
+    height: 140px;
+  }
+  .target__text-info{
+    padding: 7rem 0 3rem 0;
+  }
+}
+@media(max-width: 680px){
+  .target__inner{
+    padding: 7.7rem 1rem 0 1rem;
+  }
+  .target-text-info{
+    padding: 0 1rem 5rem 1rem;
+  }
+  .target__text-info{
+    padding: 8rem 0 3rem 0;
+  }
+}
+@media(max-width: 600px){
+  .target__inner{
+    flex-direction: column;
+  }
+  .target-item__image{
+    padding: 1rem 0 0 0;
+    align-self: flex-end;
+  }
+  .target__line::before {
+    height: 340px;
+}
+}

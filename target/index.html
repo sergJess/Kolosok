@@ -13,13 +13,22 @@
       <div class="gradient-line_small gradient"></div>
       <nav class="nav header__nav">
         <ul class="nav-list">
-          <li class="nav__list nav__list_active"><a href="#" class="nav__link nav__link_active">Главная</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Мои цели</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Мои проекты</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Связаться с Павлом</a></li>
+          <li class="nav__list"><a href="../index.html" class="nav__link">Главная</a></li>
+          <li class="nav__list nav__list_active"><a href="#" class="nav__link nav__link_active">Мои цели</a></li>
+          <li class="nav__list"><a href="../my-projects/index.html" class="nav__link">Мои проекты</a></li>
+          <li class="nav__list"><a href="../feedback/index.html" class="nav__link">Связаться с Павлом</a></li>
         </ul>
+        <div class="nav__mobile-cross">
+          <div class="cross-inner">
+              <div class="cross__line-left cross__line"></div>
+              <div class="cross__line-right cross__line"></div>
+          </div>
       </nav>
       <div class="header__line"></div>
+      <div class="burger"><div class="burger__line"></div>
+    <div class="burger__middle-line"></div>
+    <div class="burger__line"></div>
+  </div>
     </div>
   </header>
   <section class="target cream-background">
@@ -27,7 +36,12 @@
       <div class="target-item target-item__text"><h2 class="main-section-title">Цели <span class="line"></span> <br>которые я преследую,</h2>
         <p class="target__text">баллотируясь</p>
         <p class="target__text target__line">в Государственную Думу:</p></div>
-<div class="target-item"><img src="../assets/images/target/target-Kolosok.jpg" alt="Kolosok photo"></div>
+<div class="target-item target-item__image">
+  <picture>
+    <source srcset="../assets/images/mobile/target/target-person-1.png" media="(max-width: 1000px)">
+    <img class="adaptive-image" src="../assets/images/target/target-Kolosok.jpg" alt="Kolosok photo">
+</picture>
+  </div>
     </div>
   </section>
   <section class="target-text-section">
@@ -40,7 +54,12 @@
   </section>
   <section class="purposes cream-background">
     <div class="container purposes__inner">
-<div class="purposes-item"><img src="../assets/images/purposes/purposes.jpg" alt="Pavel Kolosok"></div>
+<div class="purposes-item">
+  <picture>
+    <source srcset="../assets/images/mobile/target/target-person-2.png" media="(max-width: 1200px)">
+    <img class="adaptive-image" src="../assets/images/purposes/purposes.jpg" alt="Pavel Kolosok">
+</picture>
+ </div>
 <div class="purposes-item purposes-item__text">
   <h2 class="section-title">Мои цели: <span class="line"></span></h2>
   <ul class="purposes-list primary-font-size">
@@ -62,7 +81,12 @@
   </section>
   <section class="work light-background">
     <div class="container work__inner">
-      <div class="work-item"><img src="../assets/images/work/work.jpg" alt="Pavel Kolosok working"></div>
+      <div class="work-item">
+        <picture>
+          <source srcset="../assets/images/mobile/target/target-person-3.jpg" media="(max-width: 1000px)">
+          <img class="adaptive-image" src="../assets/images/work/work.jpg" alt="Pavel Kolosok working">
+      </picture>
+        </div>
       <div class="work-item work-item__text">
         <h2 class="section-title">Над чем я планирую работать <br> в первую очередь как депутат: <span class="line"></span></h2>
         <p class="primary-font-size work__text-space">«Надо больше внимания уделять селам. Я имею в виду кредитование сельхозпредприятий и частных фермерских хозяйств. Надо снижать ставку по кредиту. Нужно строить на селе высокотехнологичные дома и делать все для притока людей в сельскую местность. Второе - это дороги, которые далеко за пределами Московской области представляют собой не более, чем направления.</p>
@@ -73,13 +97,13 @@
   <footer class="footer cream-background">
     <div class="container footer__inner">
   <div class="footer-item footer-icon">
-    <a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a>
-  </div>
-  <div class="footer-item footer-text">
-    <p class="primary-font-size">
-      2020 – 2021 &#169;
-      Все права защищены 
-    </p>
+    <div class="footer-link"><a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a></div>
+    <div class="footer-item footer-text">
+      <p class="primary-font-size">
+        2020 – 2021 &#169;
+        Все права защищены 
+      </p>
+    </div>
   </div>
     </div>
   </footer>
