@@ -13,3 +13,19 @@
 .cooperative__text{
   margin: 2.4rem 0;
 }
+
+@media (max-width: 1480px){
+  .cooperative__inner{
+    padding: 8rem 1rem 7rem 1rem;
+  }
+  .cooperative__inner::before {
+    height: 0;
+  }
+}
+
+@media (max-width: 800px){
+ 
+}
+@media(max-width: 680px){
+  
+}

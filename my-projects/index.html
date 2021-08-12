@@ -13,13 +13,24 @@
       <div class="gradient gradient-line_middle"></div>
       <nav class="nav header__nav">
         <ul class="nav-list">
-          <li class="nav__list nav__list_active"><a href="#" class="nav__link nav__link_active">Главная</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Мои цели</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Мои проекты</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">Связаться с Павлом</a></li>
+          <li class="nav__list"><a href="../index.html" class="nav__link ">Главная</a></li>
+          <li class="nav__list"><a href="../target/index.html" class="nav__link">Мои цели</a></li>
+          <li class="nav__list nav__list_active"><a href="#" class="nav__link nav__link_active">Мои проекты</a></li>
+          <li class="nav__list"><a href="../feedback/index.html" class="nav__link">Связаться с Павлом</a></li>
         </ul>
+        <div class="nav__mobile-cross">
+          <div class="cross-inner">
+              <div class="cross__line-left cross__line"></div>
+              <div class="cross__line-right cross__line"></div>
+          </div>
+          </div>
       </nav>
       <div class="header__line"></div>
+      <div class="burger">
+      <div class="burger__line"></div>
+      <div class="burger__middle-line"></div>
+      <div class="burger__line"></div>
+      </div>
     </div>
   </header>
 <section class="projects cream-background">
@@ -39,7 +50,11 @@
   <div class="container fresh-wood__inner">
     
     <div class="fresh-wood-item fresh-wood-item__first">
-      <img src="../assets/images/fresh-wood/fresh-wood-1.jpg" alt="Fresh Wood company">
+      <picture>
+        <source srcset="../assets/images/mobile/projects/projects-1.jpg" media="(max-width: 1450px)">
+        <img class="adaptive-image" src="../assets/images/fresh-wood/fresh-wood-1.jpg" alt="Fresh Wood company" loading="lazy">
+    </picture>
+     
     </div>
     <div class="fresh-wood-item fresh-wood-item__second">
       <h2 class="section-title">О компании FRESH WOOD: <span class="line"></span></h2>
@@ -47,8 +62,18 @@
         «Компания «FRESH WOOD» – это производственно-строительная компания, которая обладает мощностями, в Дмитровском районе, в частности, это производство домокомплектов из бруса, а сегодня добавлены и дополнительные пилорамные мощности. У нас процесс направлен на переработку: мы закупаем хороший лес, пилим его, строгаем, сушим, клеим брус, а дальше делаем комплекты домов и строим под заказчиков или на продажу. В нашей компании работает более 30 человек: и проектировщики, и строители, и менеджеры в отделе продаж.
       </p>
       <div class="fresh-wood__images">
-<div class="fresh-wood__images-item"><img src="../assets/images/fresh-wood/fresh-wood-2.jpg" alt=""></div>
-<div class="fresh-wood__images-item"><img src="../assets/images/fresh-wood/fresh-wood-3.jpg" alt=""></div>
+<div class="fresh-wood__images-item">
+  <picture>
+    <source srcset="../assets/images/mobile/projects/project-2.jpg" media="(max-width: 1450px)">
+    <img class="adaptive-image" src="../assets/images/fresh-wood/fresh-wood-2.jpg" alt="" loading="lazy">
+</picture>
+  </div>
+<div class="fresh-wood__images-item">
+  <picture>
+    <source srcset="../assets/images/mobile/projects/project-3.jpg" media="(max-width: 1450px)">
+    <img class="adaptive-image" src="../assets/images/fresh-wood/fresh-wood-3.jpg" alt="" loading="lazy">
+</picture>
+  </div>
       </div>
     </div>
   </div>
@@ -63,19 +88,19 @@
     <p class="primary-font-size cooperative__text">Возрождение традиций честного и открытого бизнеса, взаимовыручка и партнерство – значимые нерушимые ценности современной экономики!</p>
   </div>
 </section>
-  <footer class="footer cream-background">
-    <div class="container footer__inner">
-  <div class="footer-item footer-icon">
-    <a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a>
-  </div>
+<footer class="footer cream-background">
+  <div class="container footer__inner">
+<div class="footer-item footer-icon">
+  <div class="footer-link"><a href="mailto:info@pavelkolosok.ru" class="footer__link primary-font-size">info@pavelkolosok.ru</a></div>
   <div class="footer-item footer-text">
     <p class="primary-font-size">
       2020 – 2021 &#169;
       Все права защищены 
     </p>
   </div>
-    </div>
-    <script src="../js/index.js"></script>
-  </footer>
+</div>
+  </div>
+</footer>
+<script src="../js/index.js"></script>
 </body>
 </html>

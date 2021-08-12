@@ -13,3 +13,38 @@
 .project__semi-moon-up{
 right: 270px;
 }
+
+@media (max-width: 1480px){
+  .projects__inner{
+    padding: 8rem 1rem 18rem 1rem;
+  }
+}
+@media (max-width: 900px){
+  .project__semi-moon-up{
+    right: 150px;
+    }
+    .project__cirlce{
+      right: 220px;
+      bottom: -80px;
+    }
+}
+
+@media(max-width: 680px){
+  .project__title{
+    max-width: 100px;
+  }
+  .project__title{
+    padding: 0 1rem 0 0;
+  }
+  .project__cirlce{
+    right: 0;
+  }
+}
+@media(max-width: 380px){
+  .project__semi-moon-up{
+    right: 60px;
+    }
+    .project__cirlce{
+      right: -40px;
+    }
+}

@@ -22,3 +22,15 @@
   background-position: center;
   background-image: url(../assets/images/svg/semi-moon-up.svg);
 }
+
+@media(max-width:900px){
+  .semi-moon-up{
+    width: 170px;
+    height: 88px;
+    background-image: url(../assets/images/mobile/svg/semi-moon-up.svg);
+  }
+  .circle__round{
+    width: 45px;
+    height: 45px;
+  }
+}

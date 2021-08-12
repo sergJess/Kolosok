@@ -159,6 +159,10 @@ right: 190px;
     width: 25px;
     right: 145px;
     }
+    .gradient-line_middle{
+        width: 85px;
+        right: 80px;
+        }
 }
 @media (max-width: 1000px){
     .section-title{
@@ -193,4 +197,10 @@ right: 190px;
     .adaptive-image{
         max-width: 100%;
     }
+}
+@media(max-width: 380px){
+    .gradient-line_middle{
+        width: 45px;
+       right: 50px;
+        }
 }

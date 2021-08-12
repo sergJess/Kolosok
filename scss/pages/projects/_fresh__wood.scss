@@ -41,3 +41,35 @@ z-index: 100;
   @extend %relative;
 
 }
+@media (max-width: 1680px){
+  .fresh-wood__inner{
+    padding: 14rem 4rem 4rem 4rem;
+
+  }
+}
+@media (max-width: 1480px){
+  .fresh-wood__inner{
+    padding: 9rem 1rem 4rem 1rem;
+
+  }
+  .fresh-wood__inner::before{
+    width: 35%;
+  }
+  .fresh-wood__inner::after{
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    left: 5rem;
+  }
+}
+
+@media (max-width: 800px){
+  .fresh-wood__inner{
+    flex-direction: column;
+  }
+}
+@media(max-width: 680px){
+  .fresh-wood__inner::before{
+    height: 180px;
+  }
+}
