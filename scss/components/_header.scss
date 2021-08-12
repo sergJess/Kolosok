@@ -21,10 +21,12 @@
   height: 2px;
   background-color: $Border-color;
 }
-@media (max-width: 1480px){
+@media (max-width: 1680px){
   .header__inner{
-    padding: 3rem 0 3rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
   }
+}
+@media (max-width: 1480px){
   .header__nav::before{
     right: 0;
   }

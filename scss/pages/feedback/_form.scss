@@ -44,3 +44,32 @@
 .button__form{
   align-self: flex-end;
 }
+
+@media (max-width: 1680px){
+  .form__inner{
+    padding: 14rem 4rem 15rem 4rem;
+  }
+}
+@media (max-width: 1480px){
+  .form__inner{
+    padding: 14rem 1rem 15rem 1rem;
+  }
+
+}
+@media(max-width:1000px){
+  .form__inner{
+    padding: 14rem 1rem 4rem 1rem;
+  }
+  .feedback__title{
+    padding: 0 1rem 0 0;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .form__textarea {
+    margin: 0 0 3rem 0;
+  }
+}
+@media(max-width:680px){
+  
+}
