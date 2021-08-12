@@ -58,7 +58,7 @@
 }
 @media(max-width:1000px){
   .form__inner{
-    padding: 14rem 1rem 4rem 1rem;
+    padding: 7rem 1rem 4rem 1rem;
   }
   .feedback__title{
     padding: 0 1rem 0 0;
@@ -68,8 +68,9 @@
   }
   .form__textarea {
     margin: 0 0 3rem 0;
+    border: 2px solid $Active-color;
   }
-}
-@media(max-width:680px){
-  
+  .form-item__second{
+    padding: 2rem 0 0 0;
+  }
 }

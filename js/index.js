@@ -56,5 +56,40 @@ function getSumOfHeights(element){
             }
         });
 
+// href 
 
-    
+function isNodeOrParent(target) {
+  let anchor = target;
+  if (target.parentNode.classList.contains('scrollTo')) {
+      anchor = target.parentNode;
+      return anchor
+  }
+  return anchor;
+}
+
+document.addEventListener('click', function(e) {
+
+  if (e.target.classList.contains('scrollTo') || e.target.parentNode.classList.contains('scrollTo')) {
+      e.preventDefault();
+      const scrollSpeed = 0.7;
+      let windowOffSetY = window.pageYOffset;
+      let anchorElement = isNodeOrParent(e.target).getAttribute('data-href');
+      let toScrollElelement = document.getElementById(anchorElement);
+      let topCoordsOftoScrollElelement = toScrollElelement.getBoundingClientRect().top;
+      let start = null;
+      requestAnimationFrame(step);
+
+      function step(time) {
+          if (start === null) start = time;
+          let progress = time - start;
+          let windowCoordsToScrollY = (topCoordsOftoScrollElelement < 0) ? Math.max(windowOffSetY - progress / scrollSpeed, windowOffSetY + topCoordsOftoScrollElelement) : Math.min(windowOffSetY + progress / scrollSpeed, windowOffSetY + topCoordsOftoScrollElelement);
+          window.scrollTo(0, windowCoordsToScrollY);
+          if (windowCoordsToScrollY != windowOffSetY + topCoordsOftoScrollElelement) {
+              requestAnimationFrame(step);
+          }
+
+      }
+  }
+
+
+});
