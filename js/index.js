@@ -100,8 +100,8 @@ document.addEventListener('click', function(e) {
 const form =document.querySelector('#form');
 const inputs = document.querySelectorAll('#form [name]');
 const url = '../mail.php';
-
-form.addEventListener('submit', (e)=>{
+if(form){
+  form.addEventListener('submit', (e)=>{
   e.preventDefault();
   if(validateForm(inputs)){
     fetch(url, {
@@ -113,6 +113,7 @@ form.addEventListener('submit', (e)=>{
   }
 
 });
+}
 
 function validateForm(formFields){
 for(let i = 0, length = formFields.length; i <length; i++){
