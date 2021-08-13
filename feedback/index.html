@@ -50,20 +50,20 @@
 </section>
 <div class="section-form light-background">
   <div class="container form__inner">
-    <form action="../mail.php" class="form" method="POST"  novalidate>
+    <form id="form" action="../mail.php" class="form" method="POST"  novalidate>
       <div class="form-item">
-        <div class=""><input class="primary-font-size form__placeholder form__input" type="text" placeholder="Ваше имя" name="name" required></div>
+        <div><input class="primary-font-size form__placeholder form__input" type="text" placeholder="Ваше имя" name="name" required></div>
         <div class="form__input-space"><input class="primary-font-size form__placeholder form__input" type="email" placeholder="Ваша почта" name="email" required></div>
         <p class="form__text">
           Нажимая на кнопку «Отправить» вы соглашаетесь на обработку персональных данных
         </p>
       </div>
       <div class="form-item form-item__second">
-        <div class="">
-          <textarea class="primary-font-size form__placeholder form__textarea" name="form-area" id="form-text" placeholder="Сообщение" rows="5" cols="1" required
+        <div>
+          <textarea class="primary-font-size form__placeholder form__textarea" name="message" id="form-text" placeholder="Сообщение" rows="5" cols="1"  required
           ></textarea>
         </div>
-        <button class="button button_aqua button__form" type="submit">
+        <button id="button-submit" class="button button_aqua button__form" type="submit" name="submit">
             <span class="button__text button__text ">отправить <span class="button__post-text button__text_light">&#62;</span></span>
         </button>
       </div>

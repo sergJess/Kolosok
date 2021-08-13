@@ -1,3 +1,4 @@
+window.onload = function(){
 // nav
 const navigation =  document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__link');
@@ -93,3 +94,31 @@ document.addEventListener('click', function(e) {
 
 
 });
+
+// form 
+
+const form =document.querySelector('#form');
+const inputs = document.querySelectorAll('#form [name]');
+const url = '../mail.php';
+
+form.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  if(validateForm(inputs)){
+    fetch(url, {
+      method: 'POST',
+      body : new FormData(form)
+    });
+     
+    form.reset();
+  }
+
+});
+
+function validateForm(formFields){
+for(let i = 0, length = formFields.length; i <length; i++){
+if(formFields[i].texContent === '') return false;
+}
+return true;
+}
+
+}
