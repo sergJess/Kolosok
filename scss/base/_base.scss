@@ -192,9 +192,9 @@ right: 190px;
         
 }
 @media(max-width:620px){
-    body{
-        max-width: 620px;
-        width: 100vw;
+    :root {
+        max-width: 100vw;
+        width: 100%;
         overflow-x: hidden;
     }
    
