@@ -98,18 +98,21 @@ document.addEventListener('click', function(e) {
 // form 
 
 const form =document.querySelector('#form');
-const inputs = document.querySelectorAll('#form [name]');
 const url = '../mail.php';
 if(form){
   form.addEventListener('submit', (e)=>{
+    const inputs = document.querySelectorAll('#form [name]');
+    // console.log(validateForm(inputs));
   e.preventDefault();
+
   if(validateForm(inputs)){
+    alert('Jess')
     fetch(url, {
       method: 'POST',
       body : new FormData(form)
     });
-     
     form.reset();
+    console.log('JEss');
   }
 
 });
@@ -117,7 +120,8 @@ if(form){
 
 function validateForm(formFields){
 for(let i = 0, length = formFields.length; i <length; i++){
-if(formFields[i].texContent === '') return false;
+  console.log(formFields[i]);
+if(formFields[i].textContent === '') return false;
 }
 return true;
 }
